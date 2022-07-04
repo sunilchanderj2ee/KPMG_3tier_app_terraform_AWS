@@ -20,3 +20,13 @@ module "networking" {
   source    = "./modules/networking"
   namespace = var.namespace
 }
+
+terraform {
+  cloud {
+    organization = "KPMG-assignment"
+
+    workspaces {
+      name = "3tier-test"
+    }
+  }
+}

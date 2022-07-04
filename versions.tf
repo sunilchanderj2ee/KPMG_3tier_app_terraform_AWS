@@ -13,11 +13,5 @@ terraform {
   
 # code to create remote state on terraform cloud
 # delete or comment out to run locally
-backend "remote" {
-    organization = "<insert your organization here>"
 
-    workspaces {
-      name = "3tier-test"
-    }
-  }
 }
